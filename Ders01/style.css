@@ -1,0 +1,16 @@
+ol {
+	
+	background-color: #135123;
+}	
+
+table > thead {
+	background-color: brown;
+}
+
+#tblKullanicilar2 tr:nth-child(5) {
+	background-color: brown;
+}
+
+.red {
+	background-color: red;
+}
