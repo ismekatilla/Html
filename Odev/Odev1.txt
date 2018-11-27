@@ -1,0 +1,14 @@
+Bir kullanıcı kayıt ekranı hayal edelim. Bootstrap ile ekranı tasarlamaya çalışalım.
+Farklı elementler kullanmak için ekranda şunlar olsun diyelim. Bir bootstrap paneli içerisinde
+
+1. Kullanıcı İli (Combo json olarak verilen listeden dolmalı.)
+2. Kullanıcı İlçesi (Combo seçilen ile göre ilçe json listesinden dolmalı.)
+3. Cinsiyet (Radio Erkek - Bayan Olacak şekilde tek seçim olmalı)
+4. Adı	(Text)
+5. Kaydet (Button a tıklandığında ekrandan doldurulan veriyi json olarak ekrana bootstrap mesajı olarak yazdıralım.)
+
+İl Json Array = [{"ilKodu":34,"ilAdi":"İstanbul"},{"ilKodu":35,"ilAdi":"İzmir"},{"ilKodu":6,"ilAdi":"Ankara"}]
+
+İlçe Json Array = [{"ilKodu":34,"ilceKodu":11,"ilceAdi":"Fatih"},{"ilKodu":34,"ilceKodu":12,"ilceAdi":"Çekmeköy"},{"ilKodu":34,"ilceKodu":13,"ilceAdi":"Kadıköy"},{"ilKodu":35,"ilceKodu":1,"ilceAdi":"Karşıyaka"},{"ilKodu":35,"ilceKodu":2,"ilceAdi":"Alsancak"},{"ilKodu":35,"ilceKodu":3,"ilceAdi":"Bornova"},{"ilKodu":6,"ilceKodu":21,"ilceAdi":"Çankaya"},{"ilKodu":6,"ilceKodu":22,"ilceAdi":"Keçiören"},{"ilKodu":6,"ilceKodu":23,"ilceAdi":"Polatlı"}]
+
+Kaydet Sonucu Ekrana yazdırılacak = {"ilKodu":34,"ilceKodu":11,"cinsiyet":"ERKEK","adi":"AHMET MEHMET"}
