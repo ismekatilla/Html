@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="register.css" rel="stylesheet">
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		
+		<title>Register</title>
+	</head>
+	<body onload="ilYukle()">
+		<div class="container">
+ <!---heading---->
+     <header class="heading"> Registration-Form</header><hr></hr>
+	<!---Form starting----> 
+	<div class="row ">
+	 <!--- İl---->
+         <div class="col-sm-12">
+             <div class="row">
+			     <div class="col-xs-4">
+          	         <label class="firstname">İl :</label> </div>
+		         <div class="col-xs-8">
+		             <select name="il" id="il" onchange="ilChanged()" placeholder="İl Seçiniz" class="form-control"></select>
+             </div>
+		      </div>
+		 </div>
+		 
+		 
+         <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+                     <label class="lastname">İlçe :	</label></div>
+				<div class ="col-xs-8">	 
+		             <select name="ilce" id="ilce" placeholder="İlçe Seçiniz" class="form-control last"></select>
+                </div>
+		     </div>
+		 </div>
+     <!-----İsim---->
+		 <div class="col-sm-12">
+		     <div class="row">
+			     <div class="col-xs-4">
+		             <label class="mail" >İsim :</label></div>
+			     <div class="col-xs-8"	>	 
+			          <input type="text" name="isim"  id="isim" placeholder="İsim Giriniz" class="form-control" >
+		         </div>
+		     </div>
+		 </div>
+		  
+     <!-----------Cinsiyet-------->
+         <div class="col-sm-12">
+		     <div class ="row">
+                 <div class="col-xs-4 ">
+			       <label class="gender">Cinsiyet :</label>
+				 </div>
+			 
+			     <div class="col-xs-4 male">	 
+				     <input type="radio" name="cinsiyet"  id="erkek" value="erkek">Erkek</input>
+				 </div>
+				 
+				 <div class="col-xs-4 female">
+				     <input type="radio"  name="cinsiyet" id="kadin" value="kadin" >Kadın</input>
+			     </div>
+			
+		  	 </div>
+		     <div class="col-sm-12">
+		         <div class="btn btn-warning" onclick="exportAsJson()">Submit</div>
+		   </div>
+		 </div>
+	 </div>	 
+		 		 
+		 
+</div>
+	</body>
+</html>
